@@ -1,0 +1,28 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: black;
+    color: rgb(7, 7, 7);
+}
+
+.back{
+     color: rgb(188, 186, 186);
+     font-size: 25px;
+     margin-top: 15px;
+     margin-left: 15px;
+}
+
+.head{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin-top: 50px;
+
+}
