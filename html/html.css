@@ -1,4 +1,4 @@
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,19 +10,107 @@ body {
     color: rgb(7, 7, 7);
 }
 
-.back{
-     color: rgb(188, 186, 186);
-     font-size: 25px;
-     margin-top: 15px;
-     margin-left: 15px;
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.head{
+.back {
+    color: rgb(188, 186, 186);
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: 15px;
+}
+
+.content-wrapper {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.head {
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 200px;
     margin-top: 50px;
+}
 
+.head p {
+    white-space: nowrap;
+}
+
+#questionDiv {
+    color: white;
+    margin-top: 50px;
+}
+
+.options {
+    color: white;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.option {
+    border: 1px solid white;
+    background-color: rgb(54, 54, 54);
+    border-radius: 10px;
+    padding: 12px 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: rgb(78, 78, 78);
+}
+
+.correct {
+    background-color: green !important;
+}
+
+.wrong {
+    background-color: red !important;
+}
+
+#nextBtn {
+    margin-top: 80px;
+    border-radius: 10px;
+    height: 30px;
+    width: 70px;
+    border: 1px solid white;
+    outline: none;
+}
+
+#nextBtn:hover {
+    background-color: rgb(209, 208, 208);
+}
+
+.completed {
+    margin-top: 150px;
+    margin-bottom: 30px;    
+}
+
+.result {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;   /* space between score, message, questions */
+}
+
+.final-message {
+    white-space: nowrap;  /* keep message in one line */
+    font-weight: 600;
+}
+
+.success {
+    color: green;
+}
+
+.fail {
+    color: red;
 }

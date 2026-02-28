@@ -24,12 +24,10 @@ img {
     height: 100%;
     padding: 80px;
     border-radius: 20%;
-
 }
 
 .right-box {
     margin-top: 130px;
-
 }
 
 h1 {
@@ -42,7 +40,7 @@ p {
     line-height: 1.5;
 }
 
-input{
+input {
     margin-top: 30px;
     height: 40px;
     width: 400px;
@@ -52,26 +50,136 @@ input{
 }
 
 input:focus {
-  outline: none;
+    outline: none;
 }
 
 a {
-    display: inline-block;   
-     text-decoration: none;
-     background-color: rgb(58, 162, 188);
-     height: 30px;
-     width: 80px;
-     text-align: center;
-     border-radius: 15px;
-     line-height: 30px;
-     color: white;
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(58, 162, 188);
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 30px;
+    color: white;
 }
 
-a:hover{
+a:hover {
     box-shadow: 1px 1px 10px 1px rgb(58, 162, 188);
 }
 
-#msg{
+#msg {
     margin-left: 150px;
 }
+ 
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
 
+    .left-box {
+        flex: none;
+        height: 280px;
+        overflow: hidden;
+    }
+
+    img {
+        padding: 30px;
+        border-radius: 10%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .right-box {
+        flex: none;
+        margin-top: 30px;
+        padding: 0 30px 50px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    input {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #msg {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+}
+
+ 
+@media (max-width: 480px) {
+    .left-box {
+        height: 220px;
+    }
+
+    img {
+        padding: 20px;
+        border-radius: 8%;
+    }
+
+    .right-box {
+        margin-top: 20px;
+        padding: 0 20px 40px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: 14px;
+    }
+
+    input {
+        margin-top: 20px;
+        height: 44px;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    a {
+        margin-top: 4px;
+        height: 38px;
+        width: 90px;
+        line-height: 38px;
+        font-size: 15px;
+    }
+
+    #msg {
+        font-size: 12px;
+        margin-left: 0;
+    }
+}
+
+ 
+@media (max-width: 360px) {
+
+    main {
+    justify-content: center;
+    align-items: center;
+}
+    .left-box {
+        height: 180px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

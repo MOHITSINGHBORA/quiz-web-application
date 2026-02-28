@@ -17,6 +17,20 @@ body {
     align-items: center;
 }
 
+ 
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.back-btn i {
+    font-size: 25px;
+    color: white;
+}
+
 main {
     border: 2px solid black;
     border-radius: 20px;
@@ -35,7 +49,6 @@ main {
     width: 70%;
     height: 100%;
     overflow: hidden;
-
 }
 
 .left-card img {
@@ -46,17 +59,20 @@ main {
 }
 
 .right-card {
-    margin-top: 60px;
-    margin-left: 80px;
+    margin-top: 80px;
+    margin-left: 40px;
     width: 50%;
 }
 
-#h1{
+#h1 {
     color: black;
+    font-size: 28px;
 }
 
 p {
     margin-top: 20px;
+    color: #333;
+    font-size: 15px;
 }
 
 .options {
@@ -76,9 +92,141 @@ p {
     color: white;
     width: 200px;
     height: 30px;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .option-btn:hover {
     background-color: white;
     color: black;
+}
+
+ 
+@media (max-width: 900px) {
+    main {
+        width: 80%;
+        height: 65%;
+    }
+
+    .right-card {
+        margin-left: 40px;
+    }
+}
+
+ 
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100vh;
+        border-radius: 20px;
+    }
+
+    .main-card {
+        flex-direction: column;
+        border-radius: 20px;
+        height: auto;
+    }
+
+    .left-card {
+        width: 100%;
+        height: 220px;
+        flex-shrink: 0;
+    }
+
+    .left-card img {
+        border-radius: 20px 20px 0 0;
+        object-position: center top;
+    }
+
+    .right-card {
+        width: 100%;
+        margin: 30px 0 30px 0;
+        padding: 0 30px;
+    }
+
+    #h1 {
+        font-size: 24px;
+    }
+
+    .option-btn {
+        width: 100%;
+    }
+}
+
+ 
+@media (max-width: 480px) {
+    .back-btn {
+        top: 14px;
+        left: 14px;
+        font-size: 13px;
+        padding: 7px 13px 7px 10px;
+    }
+
+    .back-btn i {
+        font-size: 16px;
+    }
+
+    body {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .left-card {
+        height: 180px;
+    }
+
+    .right-card {
+        padding: 0 20px;
+        margin: 24px 0 24px 0;
+    }
+
+    #h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    .options {
+        margin-top: 24px;
+    }
+
+    .option-btn {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+}
+
+ 
+@media (max-width: 360px) {
+
+   main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+    .left-card {
+        height: 150px;
+    }
+
+    #h1 {
+        font-size: 18px;
+    }
 }
