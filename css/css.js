@@ -143,7 +143,7 @@ nextBtn.addEventListener("click", () => {
         let messageClass = "";
 
         if (score === questions.length) {
-            message = "Perfect! You're an HTML master!";
+            message = "Perfect! You're an CSS master!";
             messageClass = "success";
         }
         else if (score >= 12) {
