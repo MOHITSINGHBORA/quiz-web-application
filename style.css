@@ -166,12 +166,8 @@ a:hover {
 
  
 @media (max-width: 360px) {
-
-    main {
-    justify-content: center;
-    align-items: center;
-}
     .left-box {
+        
         height: 180px;
     }
 

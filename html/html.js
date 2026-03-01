@@ -23,6 +23,66 @@ const questions = [
         question: "Which tag is used for the largest heading?",
         options: ["<h6>", "<head>", "<h1>", "<heading>"],
         answer: 2
+    },
+    {
+        question: "Which HTML tag is used to define an unordered list?",
+        options: ["<ol>", "<li>", "<ul>", "<list>"],
+        answer: 2
+    },
+    {
+        question: "Which HTML attribute specifies the URL of a hyperlink?",
+        options: ["src", "link", "url", "href"],
+        answer: 3
+    },
+    {
+        question: "Which tag is used to define a table row?",
+        options: ["<td>", "<tr>", "<th>", "<table>"],
+        answer: 1
+    },
+    {
+        question: "Which HTML tag is used to define bold text?",
+        options: ["<strong>", "<bold>", "<b>", "<em>"],
+        answer: 0
+    },
+    {
+        question: "What is the correct HTML tag for inserting a line break?",
+        options: ["<break>", "<lb>", "<newline>", "<br>"],
+        answer: 3
+    },
+    {
+        question: "Which tag is used to define the body of an HTML document?",
+        options: ["<main>", "<section>", "<body>", "<content>"],
+        answer: 2
+    },
+    {
+        question: "Which HTML attribute is used to define inline styles?",
+        options: ["class", "font", "style", "styles"],
+        answer: 2
+    },
+    {
+        question: "Which tag is used to create a dropdown list?",
+        options: ["<input>", "<list>", "<dropdown>", "<select>"],
+        answer: 3
+    },
+    {
+        question: "Which HTML tag is used to define a paragraph?",
+        options: ["<para>", "<p>", "<pg>", "<text>"],
+        answer: 1
+    },
+    {
+        question: "Which tag is used to embed a video in HTML5?",
+        options: ["<media>", "<embed>", "<movie>", "<video>"],
+        answer: 3
+    },
+    {
+        question: "What does the 'alt' attribute in an <img> tag provide?",
+        options: [
+            "The image alignment",
+            "An alternate image source",
+            "Alternative text if the image cannot be displayed",
+            "The image file size"
+        ],
+        answer: 2
     }
 ];
 
@@ -91,11 +151,11 @@ nextBtn.addEventListener("click", () => {
             message = "Perfect! You're an HTML master!";
             messageClass = "success";
         }
-        else if (score >= 3) {
+        else if (score >= 12) {
             message = "Excellent!";
             messageClass = "success";
         }
-        else if (score >= 2) {
+        else if (score >= 7) {
             message = "Good!";
             messageClass = "success";
         }
